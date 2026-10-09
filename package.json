@@ -5,6 +5,23 @@
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/capital-design-system"
+  },
+  "homepage": "https://yourusername.github.io/capital-design-system",
+  "license": "MIT",
+  "author": {
+    "name": "keke78ui9",
+    "email": "keke78ui9@gmail.com"
+  },
+  "keywords": [
+    "design-system",
+    "react",
+    "components",
+    "ui",
+    "storybook"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
