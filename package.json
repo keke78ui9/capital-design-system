@@ -1,15 +1,26 @@
 {
-  "name": "capital-design-system",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@capital/ui",
+  "version": "0.1.0",
+  "description": "Capital design system components and tokens",
   "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
+    "build-storybook": "storybook build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "storybook": "storybook dev -p 6006"
   },
   "dependencies": {
     "react": "^19.2.8",

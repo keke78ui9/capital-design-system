@@ -1,0 +1,11 @@
+[build]
+  command = "npm run build-storybook"
+  publish = "storybook-static"
+
+[context.production]
+  command = "npm run build-storybook"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

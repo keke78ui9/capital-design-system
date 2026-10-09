@@ -12,6 +12,23 @@ const dirname = typeof __dirname !== 'undefined' ? __dirname : path.dirname(file
 // More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 export default defineConfig({
   plugins: [react()],
+  build: {
+    lib: {
+      entry: 'src/index.ts',
+      name: 'CapitalUI',
+      formats: ['es'],
+      fileName: () => 'index.js',
+    },
+    rollupOptions: {
+      external: ['react', 'react-dom'],
+      output: {
+        globals: {
+          react: 'React',
+          'react-dom': 'ReactDOM',
+        },
+      },
+    },
+  },
   test: {
     projects: [{
       extends: true,
