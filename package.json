@@ -31,7 +31,6 @@
   "files": [
     "dist"
   ],
-  "packageManager": "pnpm@7.33.7",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
